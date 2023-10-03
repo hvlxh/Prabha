@@ -1,0 +1,28 @@
+{
+  "name": "prabha",
+  "version": "1.0.0-dev",
+  "description": "An universal logging system for javascript.",
+  "main": "dist/node.js",
+  "broswer": "dist/broswer.js",
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "npm run compatiable && npm run browserify",
+    "compatiable": "babel src/lib.js --out-file dist/node.js",
+    "browserify": "webpack --mode production"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "prabha": "file:"
+  },
+  "devDependencies": {
+    "moment": "^2.29.4",
+    "moment-locales-webpack-plugin": "^1.2.0",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "@babel/cli": "^7.23.0",
+    "@babel/core": "^7.23.0",
+    "@babel/preset-env": "^7.22.20"
+  }
+}
