@@ -14,7 +14,7 @@ declare module "prabha" {
 
   export interface ThemeConfiguration extends Omit<import('@types/prabha').Configuration, "theme"> {}
 
-  export default class Logger {
+  export class Logger {
     constructor(config: Configuration | "default" | "modern")
 
     info(...message: string[]): void

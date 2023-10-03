@@ -1,7 +1,8 @@
-const { default: Logger } = require('./dist/node')
+const Prabha = require('./dist/node')
 
 if (typeof process !== "undefined") {
-  module.exports = Logger
+  console.log(Prabha)
+  module.exports = Prabha
 } else {
   throw new Error('Please use "prabha/dist/broswer.js for broswer version"')
 }
